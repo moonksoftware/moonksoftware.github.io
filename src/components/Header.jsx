@@ -31,7 +31,7 @@ const Header = () => {
 
                     {/* Desktop Nav */}
                     <div className="hidden md:flex items-center space-x-6">
-                        <a href="#download" className="bg-brand-600 hover:bg-brand-700 text-white px-5 py-2 rounded-full font-medium transition-all shadow-lg shadow-brand-500/20 hover:shadow-brand-500/40 text-sm">
+                        <a href="https://play.google.com/store/apps/details?id=com.moonksoftware.shoppinglist" className="bg-brand-600 hover:bg-brand-700 text-white px-5 py-2 rounded-full font-medium transition-all shadow-lg shadow-brand-500/20 hover:shadow-brand-500/40 text-sm">
                             {t.download}
                         </a>
 
