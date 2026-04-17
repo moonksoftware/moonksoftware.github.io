@@ -38,7 +38,7 @@ const Screenshots = () => {
                             style={{ animationDelay: `${idx * 100}ms` }}
                         >
                             {/* Phone Frame */}
-                            <div className={`relative w-64 h-[520px] rounded-[2rem] border-8 shadow-2xl flex flex-col items-center justify-center overflow-hidden ${theme === 'dark' ? 'bg-slate-800 border-slate-700' : 'bg-gray-200 border-gray-900'}`}>
+                            <div className={`relative w-64 h-[535px] rounded-[2rem] border-8 shadow-2xl flex flex-col items-center justify-center overflow-hidden ${theme === 'dark' ? 'bg-slate-800 border-slate-700' : 'bg-gray-200 border-gray-900'}`}>
                                 <img
                                     src={shot.src}
                                     alt={t[shot.titleKey]}
@@ -46,7 +46,7 @@ const Screenshots = () => {
                                     onError={(e) => { e.target.onerror = null; e.target.src = shot.fallback; }}
                                 />
                                 {/* Notch */}
-                                <div className={`absolute top-0 w-32 h-6 rounded-b-xl ${theme === 'dark' ? 'bg-slate-700' : 'bg-gray-900'}`}></div>
+                                <div className={`absolute top-0 w-24 h-4 rounded-b-xl ${theme === 'dark' ? 'bg-slate-700' : 'bg-gray-900'}`}></div>
                             </div>
 
                             {/* Text underneath */}
