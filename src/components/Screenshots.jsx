@@ -4,10 +4,10 @@ import { useTheme } from '../contexts/ThemeContext';
 import Reveal from './Reveal';
 
 const SHOTS = [
-    { src: '/images/1.jpg', fallback: 'https://placehold.co/390x844/22c55e/ffffff?text=Home', titleKey: 'gallery_img2_title', descKey: 'gallery_img2_desc' },
+    { src: '/images/4.jpg', fallback: 'https://placehold.co/390x844/22c55e/ffffff?text=Home', titleKey: 'gallery_img2_title', descKey: 'gallery_img2_desc' },
     { src: '/images/3.jpg', fallback: 'https://placehold.co/390x844/16a34a/ffffff?text=Create+List', titleKey: 'gallery_img3_title', descKey: 'gallery_img3_desc' },
     { src: '/images/2.jpg', fallback: 'https://placehold.co/390x844/15803d/ffffff?text=Share+List', titleKey: 'gallery_img4_title', descKey: 'gallery_img4_desc' },
-    { src: '/images/4.jpg', fallback: 'https://placehold.co/390x844/166534/ffffff?text=Use+List', titleKey: 'gallery_img5_title', descKey: 'gallery_img5_desc' },
+    { src: '/images/1.jpg', fallback: 'https://placehold.co/390x844/166534/ffffff?text=Use+List', titleKey: 'gallery_img5_title', descKey: 'gallery_img5_desc' },
 ];
 
 const Screenshots = () => {
