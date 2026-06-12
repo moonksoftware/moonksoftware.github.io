@@ -91,6 +91,35 @@ const Projects = () => {
                         </Reveal>
                     </Link>
 
+                    {/* Cipheria Card */}
+                    <Link to="/cipheria" className="block group h-full">
+                        <Reveal delay={200} className="h-full">
+                            <div
+                                className={`rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border h-full flex flex-col ${theme === 'dark' ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-100'}`}
+                            >
+                                <div className={`h-48 flex items-center justify-center relative overflow-hidden p-8 ${theme === 'dark' ? 'bg-purple-900/20' : 'bg-purple-50'}`}>
+                                    <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/5 to-transparent"></div>
+                                    {/* Cipheria Logo */}
+                                    <img src="/images/cipheria-logo.png" alt="Cipheria" className="w-24 h-24 rounded-2xl bg-white drop-shadow-md group-hover:scale-105 transition-transform duration-300" />
+                                </div>
+                                <div className="p-6 flex-grow flex flex-col justify-between">
+                                    <div>
+                                        <h2 className={`text-xl font-bold mb-2 transition-colors ${theme === 'dark' ? 'text-white group-hover:text-purple-400' : 'text-slate-900 group-hover:text-purple-600'}`}>
+                                            Cipheria
+                                        </h2>
+                                        <p className={`text-sm line-clamp-3 mb-4 ${theme === 'dark' ? 'text-slate-400' : 'text-slate-600'}`}>
+                                            {t.project_cipheria_desc}
+                                        </p>
+                                    </div>
+                                    <div className={`flex items-center font-medium text-sm mt-auto ${theme === 'dark' ? 'text-purple-400' : 'text-purple-600'}`}>
+                                        <span>{t.go_to_project}</span>
+                                        <i className="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </Reveal>
+                    </Link>
+
                 </div>
 
                 {/* Team Section */}

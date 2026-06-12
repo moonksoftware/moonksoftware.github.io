@@ -43,6 +43,7 @@
         "team_member_2_bio": "Software Developer",
         "projects_title": "My Projects",
         "project_listify_desc": "Smart shopping and to-do list app. Create lists easily, categorize items, and share with friends.",
+        "project_cipheria_desc": "Offline puzzle game with challenging puzzles. Play anytime, anywhere without internet.",
         "go_to_project": "Go to Project",
         "footer_rights": "MoonKSoftware All rights reserved."
     },
@@ -90,6 +91,7 @@
         "team_member_2_bio": "Yazılım Geliştirici",
         "projects_title": "Projelerim",
         "project_listify_desc": "Akıllı alışveriş ve yapılacaklar listesi uygulaması. Listelerinizi kolayca oluşturun, kategorize edin ve arkadaşlarınızla paylaşın.",
+        "project_cipheria_desc": "İnternet olmadan çevrimdışı bulmaca oyunu. Zorlayıcı bulmacalı oyunları istediğiniz zaman, her yerde oynayın.",
         "go_to_project": "Projeye Git",
         "footer_rights": "MoonKSoftware Tüm hakları saklıdır."
     }

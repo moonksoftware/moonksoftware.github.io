@@ -1,0 +1,164 @@
+import React from 'react';
+
+export default function CipheriaPrivacy() {
+  return (
+    <div className="min-h-screen transition-colors duration-300 bg-gray-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-sans antialiased">
+      <div className="max-w-[800px] mx-auto px-5 py-10">
+        <a href="/"
+          className="inline-block mb-5 text-brand-600 dark:text-brand-400 no-underline hover:underline">&larr;
+          Back</a>
+
+        {/* TÜRKÇE */}
+        <h1 className="text-[2rem] mb-1 font-bold text-slate-900 dark:text-white">Cipheria — Gizlilik Politikası</h1>
+        <p className="text-slate-500 dark:text-slate-400 mb-[30px]">Son güncelleme: 12 Haziran 2026</p>
+
+        <p className="mb-4 text-slate-700 dark:text-slate-300">
+          Bu gizlilik politikası, <strong>Moonk</strong> tarafından geliştirilen <strong>Cipheria</strong>
+          ("Uygulama") adlı mobil oyunun, kullanıcı verilerini nasıl ele aldığını açıklar.
+          Uygulamayı kullanarak bu politikada açıklanan uygulamaları kabul etmiş olursunuz.
+        </p>
+
+        <h2 className="text-[1.3rem] mt-[30px] mb-[15px] font-bold text-slate-900 dark:text-white">1. Topladığımız Veriler</h2>
+        <p className="mb-3 text-slate-700 dark:text-slate-300">
+          Cipheria bir <strong>çevrimdışı bulmaca oyunudur</strong>. Uygulamayı kullanmak için hesap
+          açmanız, ad, e-posta, telefon numarası veya benzeri kişisel bilgilerinizi vermeniz
+          <strong>gerekmez</strong>. Geliştirici olarak biz <strong>kişisel verilerinizi toplamaz,
+          saklamaz veya kendi sunucularımıza aktarmayız</strong>.
+        </p>
+        <p className="mb-3 font-semibold text-slate-800 dark:text-slate-200">Aşağıdaki veriler yalnızca <strong>cihazınızda yerel olarak</strong> saklanır:</p>
+        <ul className="ml-5 list-disc mb-3 text-slate-600 dark:text-slate-300">
+          <li className="mb-2">Oyun ilerlemeniz (tamamlanan bölümler, yıldızlar, can ve ipucu sayısı)</li>
+          <li className="mb-2">Uygulama ayarlarınız (tema, ses, müzik, dil tercihi)</li>
+          <li className="mb-2">Yarım kalan bölümlerin durumu</li>
+        </ul>
+        <p className="mb-4 text-slate-700 dark:text-slate-300">
+          Bu veriler cihazınızdan çıkmaz; uygulamayı sildiğinizde bu verilerin tamamı silinir.
+        </p>
+
+        <h2 className="text-[1.3rem] mt-[30px] mb-[15px] font-bold text-slate-900 dark:text-white">2. Üçüncü Taraf Reklamlar (Google AdMob)</h2>
+        <p className="mb-3 text-slate-700 dark:text-slate-300">
+          Uygulama, reklam göstermek için <strong>Google AdMob</strong> (Google Mobile Ads SDK)
+          hizmetini kullanır. AdMob, reklamları sunmak ve ölçmek için bazı verileri toplayabilir:
+        </p>
+        <ul className="ml-5 list-disc mb-3 text-slate-600 dark:text-slate-300">
+          <li className="mb-2">Reklam kimliği (Advertising ID / cihaz tanımlayıcısı)</li>
+          <li className="mb-2">Cihaz bilgileri ve yaklaşık (IP tabanlı) konum</li>
+          <li className="mb-2">Reklam etkileşimleri ve uygulama kullanım bilgileri</li>
+        </ul>
+        <p className="mb-4 text-slate-700 dark:text-slate-300">
+          Bu veriler Google tarafından kişiselleştirilmiş veya kişiselleştirilmemiş reklam göstermek
+          amacıyla işlenir. Google'ın bu verileri nasıl kullandığı hakkında bilgi için:
+          <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener"
+            className="text-brand-600 dark:text-brand-400 hover:underline">
+            {' '}Google'ın Gizlilik ve Şartlar sayfası</a>.
+        </p>
+
+        <h2 className="text-[1.3rem] mt-[30px] mb-[15px] font-bold text-slate-900 dark:text-white">3. İzinler</h2>
+        <p className="mb-4 text-slate-700 dark:text-slate-300">
+          Uygulama yalnızca <strong>internet erişimi</strong> iznini kullanır; bu izin reklamların
+          yüklenmesi için gereklidir. Kameranıza, kişilerinize, konumunuza (GPS) veya dosyalarınıza
+          erişmez.
+        </p>
+
+        <h2 className="text-[1.3rem] mt-[30px] mb-[15px] font-bold text-slate-900 dark:text-white">4. Çocukların Gizliliği</h2>
+        <p className="mb-4 text-slate-700 dark:text-slate-300">
+          Cipheria özellikle 13 yaşından küçük çocuklara yönelik değildir. Bilerek 13 yaşından küçük
+          çocuklardan kişisel veri toplamayız.
+        </p>
+
+        <h2 className="text-[1.3rem] mt-[30px] mb-[15px] font-bold text-slate-900 dark:text-white">5. Veri Güvenliği ve Saklama</h2>
+        <p className="mb-4 text-slate-700 dark:text-slate-300">
+          Oyun verileriniz yalnızca cihazınızda tutulduğu için kontrolü tamamen sizdedir. Uygulamayı
+          cihazınızdan kaldırdığınızda bu verilerin tamamı silinir.
+        </p>
+
+        <h2 className="text-[1.3rem] mt-[30px] mb-[15px] font-bold text-slate-900 dark:text-white">6. Bu Politikada Değişiklikler</h2>
+        <p className="mb-4 text-slate-700 dark:text-slate-300">
+          Bu gizlilik politikası zaman zaman güncellenebilir. Değişiklikler bu sayfada yayımlandığı
+          anda geçerli olur ve sayfanın üst kısmındaki tarih güncellenir.
+        </p>
+
+        <h2 className="text-[1.3rem] mt-[30px] mb-[15px] font-bold text-slate-900 dark:text-white">7. İletişim</h2>
+        <p className="mb-4 text-slate-700 dark:text-slate-300">
+          Bu gizlilik politikası veya verilerinizle ilgili sorularınız için bizimle iletişime geçebilirsiniz:<br />
+          E-posta: <a href="mailto:moonksoftware@gmail.com" className="text-brand-600 dark:text-brand-400 hover:underline">moonksoftware@gmail.com</a>
+        </p>
+
+        <hr className="my-12 border-t border-slate-300 dark:border-slate-600" />
+
+        {/* ENGLISH */}
+        <h1 className="text-[2rem] mb-1 font-bold text-slate-900 dark:text-white">Cipheria — Privacy Policy</h1>
+        <p className="text-slate-500 dark:text-slate-400 mb-[30px]">Last updated: 12 June 2026</p>
+
+        <p className="mb-4 text-slate-700 dark:text-slate-300">
+          This privacy policy explains how <strong>Cipheria</strong> (the "App"), developed by
+          <strong>Moonk</strong>, handles user data. By using the App, you agree to the practices
+          described in this policy.
+        </p>
+
+        <h2 className="text-[1.3rem] mt-[30px] mb-[15px] font-bold text-slate-900 dark:text-white">1. Data We Collect</h2>
+        <p className="mb-3 text-slate-700 dark:text-slate-300">
+          Cipheria is an <strong>offline puzzle game</strong>. You are <strong>not required</strong> to
+          create an account or provide your name, email, phone number, or any other personal information
+          to use it. As the developer, we <strong>do not collect, store, or transmit your personal data
+          to our servers</strong>.
+        </p>
+        <p className="mb-3 font-semibold text-slate-800 dark:text-slate-200">The following data is stored <strong>locally on your device only</strong>:</p>
+        <ul className="ml-5 list-disc mb-3 text-slate-600 dark:text-slate-300">
+          <li className="mb-2">Your game progress (completed levels, stars, lives, and hint counts)</li>
+          <li className="mb-2">Your app settings (theme, sound, music, language preference)</li>
+          <li className="mb-2">The state of unfinished levels</li>
+        </ul>
+        <p className="mb-4 text-slate-700 dark:text-slate-300">This data never leaves your device and is deleted entirely when you uninstall the App.</p>
+
+        <h2 className="text-[1.3rem] mt-[30px] mb-[15px] font-bold text-slate-900 dark:text-white">2. Third-Party Advertising (Google AdMob)</h2>
+        <p className="mb-3 text-slate-700 dark:text-slate-300">
+          The App uses <strong>Google AdMob</strong> (Google Mobile Ads SDK) to display ads. AdMob may
+          collect certain data to serve and measure ads, including:
+        </p>
+        <ul className="ml-5 list-disc mb-3 text-slate-600 dark:text-slate-300">
+          <li className="mb-2">Advertising ID (device identifier)</li>
+          <li className="mb-2">Device information and approximate (IP-based) location</li>
+          <li className="mb-2">Ad interactions and app usage information</li>
+        </ul>
+        <p className="mb-4 text-slate-700 dark:text-slate-300">
+          This data is processed by Google to deliver personalized or non-personalized ads. For more
+          information on how Google uses this data, see
+          <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener"
+            className="text-brand-600 dark:text-brand-400 hover:underline">
+            {' '}Google's Privacy &amp; Terms</a>.
+        </p>
+
+        <h2 className="text-[1.3rem] mt-[30px] mb-[15px] font-bold text-slate-900 dark:text-white">3. Permissions</h2>
+        <p className="mb-4 text-slate-700 dark:text-slate-300">
+          The App only uses the <strong>internet access</strong> permission, which is required to load
+          ads. It does not access your camera, contacts, location (GPS), or files.
+        </p>
+
+        <h2 className="text-[1.3rem] mt-[30px] mb-[15px] font-bold text-slate-900 dark:text-white">4. Children's Privacy</h2>
+        <p className="mb-4 text-slate-700 dark:text-slate-300">
+          Cipheria is not specifically directed to children under the age of 13. We do not knowingly
+          collect personal data from children under 13.
+        </p>
+
+        <h2 className="text-[1.3rem] mt-[30px] mb-[15px] font-bold text-slate-900 dark:text-white">5. Data Security and Retention</h2>
+        <p className="mb-4 text-slate-700 dark:text-slate-300">
+          Because your game data is stored only on your device, you have full control over it. All of
+          this data is deleted when you uninstall the App from your device.
+        </p>
+
+        <h2 className="text-[1.3rem] mt-[30px] mb-[15px] font-bold text-slate-900 dark:text-white">6. Changes to This Policy</h2>
+        <p className="mb-4 text-slate-700 dark:text-slate-300">
+          This privacy policy may be updated from time to time. Changes take effect as soon as they are
+          posted on this page, and the date at the top is updated accordingly.
+        </p>
+
+        <h2 className="text-[1.3rem] mt-[30px] mb-[15px] font-bold text-slate-900 dark:text-white">7. Contact</h2>
+        <p className="mb-4 text-slate-700 dark:text-slate-300">
+          If you have any questions about this privacy policy or your data, you can contact us:<br />
+          Email: <a href="mailto:moonksoftware@gmail.com" className="text-brand-600 dark:text-brand-400 hover:underline">moonksoftware@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  );
+}
