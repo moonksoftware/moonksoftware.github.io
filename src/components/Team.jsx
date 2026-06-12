@@ -1,57 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useTheme } from '../contexts/ThemeContext';
 
-const USERS = ['AbdulbakiDEMIR', 'ahmet-yasir'];
+// Static team data — avatars are served from github.com/<user>.png, which does
+// NOT use the rate-limited GitHub API (that returned 403 on GitHub Pages).
+const TEAM = [
+    { name: 'Abdulbaki Demir', username: 'AbdulbakiDEMIR', bioKey: 'team_member_1_bio' },
+    { name: 'Ahmet Yasir', username: 'ahmet-yasir', bioKey: 'team_member_2_bio' },
+];
 
 const Team = () => {
     const { t } = useLanguage();
     const { theme } = useTheme();
-    const [members, setMembers] = useState([]);
-    const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        const fetchTeam = async () => {
-            try {
-                const results = await Promise.all(
-                    USERS.map(user => fetch(`https://api.github.com/users/${user}`).then(res => res.json()))
-                );
-
-                // Fallback titles/bios from translations if needed, 
-                // but snippet shows specific text. 
-                // We'll use GitHub data and falling back to manual mapping for titles.
-                const titles = {
-                    'AbdulbakiDEMIR': t.team_member_1_bio || 'Full Stack Geliştirici',
-                    'ahmet-yasir': t.team_member_2_bio || 'Yazılım Geliştirici'
-                };
-
-                const formatted = results.map(data => ({
-                    name: data.name || data.login,
-                    username: data.login,
-                    avatar: data.avatar_url,
-                    bio: data.bio || titles[data.login],
-                    github: data.html_url,
-                    title: titles[data.login]
-                }));
-
-                setMembers(formatted);
-            } catch (error) {
-                console.error("Error fetching team:", error);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchTeam();
-    }, [t]);
-
-    if (loading) {
-        return (
-            <div className="py-16 flex justify-center items-center">
-                <div className="w-8 h-8 border-4 border-brand-500 border-t-transparent rounded-full animate-spin"></div>
-            </div>
-        );
-    }
+    const members = TEAM.map(m => ({
+        name: m.name,
+        username: m.username,
+        avatar: `https://github.com/${m.username}.png`,
+        bio: t[m.bioKey],
+        github: `https://github.com/${m.username}`,
+    }));
 
     return (
         <section className={`py-16 transition-colors duration-300 ${theme === 'dark' ? 'bg-slate-900' : 'bg-gray-50'}`}>
