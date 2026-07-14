@@ -150,7 +150,7 @@ const Cipheria = () => {
                                 <p className={`max-w-2xl mx-auto ${muted}`}>{c.gallery_subtitle}</p>
                             </div>
                         </Reveal>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="flex flex-wrap gap-8 justify-center">
                             {shots.map((shot, idx) => (
                                 <Reveal key={idx} delay={idx * 120} className="flex flex-col gap-4 items-center">
                                     {/* Phone Frame */}
