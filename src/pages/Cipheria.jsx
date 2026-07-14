@@ -48,10 +48,9 @@ const Cipheria = () => {
     // Phone-frame screenshots — empty placeholders for now; drop a `src` in to
     // show the real in-app image later (same phone mockup style as Listify).
     const shots = [
-        { src: null, title: c.gallery_shot1_title },
-        { src: null, title: c.gallery_shot2_title },
-        { src: null, title: c.gallery_shot3_title },
-        { src: null, title: c.gallery_shot4_title },
+        { src: '/images/cipheria/1.jpeg', title: c.gallery_shot1_title },
+        { src: '/images/cipheria/2.jpeg', title: c.gallery_shot2_title },
+        { src: '/images/cipheria/3.jpeg', title: c.gallery_shot4_title },    
     ];
 
     const card = theme === 'dark' ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-100';
