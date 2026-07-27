@@ -5,7 +5,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import Reveal from '../components/Reveal';
 import cipheriaTranslations from '../cipheriaTranslations.json';
 
-const PLAY_STORE_URL = 'https://play.google.com/store';
+const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.moonksoftware.cipheria';
 
 const Cipheria = () => {
     const { theme, toggleTheme } = useTheme();
